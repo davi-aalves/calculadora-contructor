@@ -66,8 +66,18 @@ form button:hover {
   border-radius: 10px;
   overflow: hidden;
   background: var(--primary-color);
-  padding: 10px;
+  padding: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.calculadora table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.calculadora td {
+  padding: 5px;
 }
 
 .display {
@@ -78,25 +88,30 @@ form button:hover {
   border: none;
   background: #fff;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 8px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 .btn {
   width: 100%;
-  height: 60px;
-  font-size: 1.2em;
+  height: 70px;
+  font-size: 1.5em;
   font-weight: bold;
   border: none;
-  background: f1f1f1;
+  background: #f1f1f1;
   cursor: pointer;
   transition: 0.2s;
-  border-radius: 5px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .btn:hover {
   background: var(--primary-color);
   color: white;
+  transform: scale(1.05);
 }
 
 .btn-eq {
@@ -111,4 +126,13 @@ form button:hover {
 
 .btn-clear:hover {
   background: #cc0000;
+}
+
+.btn-del {
+  background: #ffb74d;
+  color: white;
+}
+
+.btn-del:hover {
+  background: #ff9800;
 }
